@@ -8,11 +8,24 @@ header {
     padding: 1em;
 }
 
+header div {
+    margin: 0 0 0 2em;
+}
+
 .logo {
     width: 10%;
     max-width: 100px;
     min-width: 50px;
-    margin: 1em 0 0 5% ;
+    display: inline-block;
+}
+
+h1{
+    font-family: 'Baloo Paaji 2';
+    font-size: 40px;
+    font-weight: 600;
+    vertical-align:middle;
+    display: inline-block;
+    color: #601143;
 }
 
 .contenedor-principal, .contenedor-piedepagina{
