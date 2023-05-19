@@ -24,6 +24,7 @@ header {
 
 p, input, textarea{
     font-family: 'Questrial';
+
 }
 
 textarea, input{
@@ -53,7 +54,7 @@ textarea:hover{
 }
 
 .botonera{
-    width: 90%;
+    width: 100%;
     margin: 1em auto;
 }
 
@@ -82,11 +83,30 @@ textarea:hover{
 
 .caja-resultado{
     background: white;
+    box-sizing: border-box;
+    border-radius: 10px;
+    box-shadow: 2px 2px 10px 5px #D7C4D0;
+    padding: 2em 5%;
+    text-align: center;
+}
+
+.mensaje-resultado {
+    width: 100%;
+}
+
+.personaje {
+    width: 90%;
+    margin: 2em auto;
 }
 
 h2{
     font-family: 'Baloo Paaji 2';
     font-size: 25px;
+}
+
+#copiar {
+    width: 50%;
+    margin: 1em auto;
 }
 
 
