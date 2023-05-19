@@ -1,7 +1,6 @@
 body{
     font-family: 'Baloo Paaji 2', cursive;
     font-family: 'Questrial', sans-serif;
-
     background: #EBE1E8;
 }
 
@@ -13,9 +12,14 @@ header {
     width: 10%;
 }
 
-h2{
-    font-family: 'Baloo Paaji 2';
-    font-size: 25px;
+.contenedor-principal{
+    width: 90%;
+    padding: 3%;
+    margin: 0 auto;
+}
+
+.caja-formulario{
+    width: 100%;
 }
 
 p, input, textarea{
@@ -26,13 +30,65 @@ textarea, input{
     font-size: 20px;
 }
 
-.cajadetexto{
+textarea{
     border: none;
+    width: 96%;
+    resize: none;
+    background: none;
+    padding: 2%;
+    transition: 1s all;
+}
+
+textarea:hover{
+    box-shadow: inset 2px 2px 4px 0 rgba(0, 0, 0, 0.5);   
+}
+
+.caja-alerta {
+    padding: 1em 0;
+}
+
+.exclamacionalerta{
+    margin: 0 1em 0 0;
+    float: left;
+}
+
+.botonera{
+    width: 90%;
+    margin: 1em auto;
+}
+
+.botonera li{
+    display: inline-block;
+    width: 35%;
+    margin: 0 5%;
+}
+
+.boton {
+    padding: 1em;
+    width: 100%;
+    background: white;
+    box-sizing: border-box;
+    border: 2px solid #BEBD75;
+    border-radius: 10px;
+    transition: 1s all;
+
+}
+
+.boton:hover{
+    box-shadow: inset 2px 2px 4px 0 ;
+    background: #BEBD75;
+    transform: scale(1.1);
 }
 
 .caja-resultado{
     background: white;
 }
+
+h2{
+    font-family: 'Baloo Paaji 2';
+    font-size: 25px;
+}
+
 
 footer{
     background: #601143;
