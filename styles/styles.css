@@ -12,7 +12,7 @@ header {
     width: 10%;
 }
 
-.contenedor-principal{
+.contenedor-principal, .contenedor-piedepagina{
     width: 90%;
     padding: 3%;
     margin: 0 auto;
@@ -61,7 +61,8 @@ textarea:hover{
 .botonera li{
     display: inline-block;
     width: 35%;
-    margin: 0 5%;
+    margin: 0 7%;
+    vertical-align: top;
 }
 
 .boton {
@@ -109,14 +110,48 @@ h2{
     margin: 1em auto;
 }
 
-
 footer{
     background: #601143;
+    padding: 1em;
 }
 
 footer p{
     color: white;
 }
+
+.hechopor .logo {
+    float: left;
+    margin: 0 5% 0 0;
+    height: 4em;
+    width: auto;
+}
+
+.hechopor, .seguime{
+    display: inline-block;
+    width: 40%;
+    vertical-align: top;
+    margin: 0;
+}
+
+.hechopor div .copyright:first-child{
+    margin-top: 1em;
+}
+
+.seguime{
+    text-align: center;
+    float: right;
+}
+
+.botonesredes li{
+    display: inline-block;
+    margin: 1em 1%;
+    min-width: 50px;
+    width:  10%;
+}
+
+.redes-logo{
+    width: 80%;
+} 
 
 @media screen and (min-width: 821px) and (max-width: 1024px){ /*❚❚❚❚❚❚❚❚❚❚❚❚❚❚ HALF DESKTOP ❚❚❚❚❚❚❚❚❚❚❚❚❚❚*/
 
