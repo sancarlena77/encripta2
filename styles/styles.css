@@ -5,23 +5,26 @@ body{
 }
 
 header {
-    padding: 2em;
+    padding: 1em;
 }
 
 .logo {
     width: 10%;
+    max-width: 100px;
+    min-width: 50px;
+    margin: 1em 0 0 5% ;
 }
 
 .contenedor-principal, .contenedor-piedepagina{
     width: 90%;
-    padding: 3%;
-    margin: 0 auto;
+    padding: 1em 3% 1em 3%;    margin: 0 auto;
 }
 
 .caja-formulario{
     width: 50%;
     display: inline-block;
     vertical-align: top;
+    margin: 0 5% 0 0;
 }
 
 p, input, textarea{
@@ -50,6 +53,7 @@ textarea:hover{
 
 .caja-alerta {
     padding: 1em 0;
+    margin: 0 1em;
 }
 
 .exclamacionalerta{
@@ -104,6 +108,7 @@ textarea:hover{
 .personaje {
     width: 90%;
     margin: 2em auto;
+    max-width: 300px;
 }
 
 h2{
@@ -119,6 +124,11 @@ h2{
 footer{
     background: #601143;
     padding: 1em;
+    vertical-align: baseline;
+    position: absolute;
+    margin: 2em 0 0 0;
+    width: 100%;
+    bottom: 0;
 }
 
 footer p{
@@ -146,6 +156,7 @@ footer p{
 .seguime{
     text-align: center;
     float: right;
+    max-width: 258px;
 }
 
 .botonesredes li{
