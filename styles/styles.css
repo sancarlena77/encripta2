@@ -5,11 +5,13 @@ body{
     background: #EBE1E8;
 }
 
-.logo {
-
+header {
+    padding: 2em;
 }
 
-
+.logo {
+    width: 10%;
+}
 
 h2{
     font-family: 'Baloo Paaji 2';
@@ -25,7 +27,7 @@ textarea, input{
 }
 
 .cajadetexto{
-    background: none;
+    border: none;
 }
 
 .caja-resultado{
