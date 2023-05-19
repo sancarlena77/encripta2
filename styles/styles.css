@@ -58,6 +58,7 @@ textarea{
     transition: 1s all;
     height: 300px;
     margin: 0 10% 0 0;
+    overflow: auto;
 }
 
 textarea:hover{
@@ -94,7 +95,7 @@ textarea:hover{
     border: 2px solid #BEBD75;
     border-radius: 10px;
     transition: 1s all;
-
+    min-width: 176px;
 }
 
 .boton:hover{
@@ -143,6 +144,7 @@ h2{
     height: 300px;
     resize: none;
     padding: 1em 0 0 0;
+    overflow: auto;
 }
 
 #copiar {
