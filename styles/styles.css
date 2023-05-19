@@ -1,0 +1,54 @@
+body{
+    font-family: 'Baloo Paaji 2', cursive;
+    font-family: 'Questrial', sans-serif;
+
+    background: #EBE1E8;
+}
+
+.logo {
+
+}
+
+
+
+h2{
+    font-family: 'Baloo Paaji 2';
+    font-size: 25px;
+}
+
+p, input, textarea{
+    font-family: 'Questrial';
+}
+
+textarea, input{
+    font-size: 20px;
+}
+
+.cajadetexto{
+    background: none;
+}
+
+.caja-resultado{
+    background: white;
+}
+
+footer{
+    background: #601143;
+}
+
+footer p{
+    color: white;
+}
+
+@media screen and (min-width: 821px) and (max-width: 1024px){ /*❚❚❚❚❚❚❚❚❚❚❚❚❚❚ HALF DESKTOP ❚❚❚❚❚❚❚❚❚❚❚❚❚❚*/
+
+
+}
+
+@media screen and (min-width: 413px) and (max-width: 820px){ /*❚❚❚❚❚❚❚❚❚❚❚❚❚❚ TABLET ❚❚❚❚❚❚❚❚❚❚❚❚❚❚*/
+
+}
+
+@media screen and (max-width: 412px) { /*❚❚❚❚❚❚❚❚❚❚❚❚❚❚ MOBILE ❚❚❚❚❚❚❚❚❚❚❚❚❚❚*/
+
+}
