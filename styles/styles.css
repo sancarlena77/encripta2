@@ -99,10 +99,19 @@ textarea:hover{
     text-align: center;
     display: inline-block;
     width: 40%;
+    min-height: 450px;
 }
 
 .mensaje-resultado {
     width: 100%;
+    height: 450px;
+}
+
+#mensaje-vacio{
+}
+
+#mensaje-procesado{
+    display: none;
 }
 
 .personaje {
@@ -114,11 +123,19 @@ textarea:hover{
 h2{
     font-family: 'Baloo Paaji 2';
     font-size: 25px;
+    margin: 2em auto;
+}
+
+#impresionParametros {
+    height: 300px;
+    resize: none;
+    padding: 1em 0 0 0;
 }
 
 #copiar {
     width: 50%;
-    margin: 1em auto;
+    margin: 40px auto 0;
+    vertical-align: baseline;
 }
 
 footer{
