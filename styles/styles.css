@@ -121,9 +121,6 @@ textarea:hover{
     height: 450px;
 }
 
-#mensaje-vacio{
-}
-
 #mensaje-procesado{
     display: none;
 }
@@ -204,6 +201,76 @@ footer p{
 
 @media screen and (min-width: 821px) and (max-width: 1024px){ /*❚❚❚❚❚❚❚❚❚❚❚❚❚❚ HALF DESKTOP ❚❚❚❚❚❚❚❚❚❚❚❚❚❚*/
 
+    header{
+        height: 50px;
+        padding: 10px;
+    }
+
+    header div{
+        text-align: left;
+        position: absolute;
+        margin: 1em 40px;
+    }
+
+    .contenedor-principal{
+        padding: 1em 3% 0 3%;
+    }
+
+    .caja-formulario{
+        margin: 1em 5% 0 0;
+    }    
+
+    textarea{
+        height: 240px;
+    }
+
+    .caja-alerta{
+        margin: 0;
+        padding: 5px 0;
+    }
+
+    .botonera{
+        margin: 10px auto;
+    }
+
+    .boton{
+        transform: scale(0.8);
+    } 
+
+    .caja-resultado{
+        padding: 1%;
+        height: 350px;
+        min-height: 0;
+    }
+
+    .personaje {
+        max-width: 200px;
+        margin: 2em 0 0 0;
+    }
+    
+    h2{
+        margin: 1em;
+    }
+
+    #mensaje-vacio{
+        display: none;
+    }
+    #mensaje-procesado{
+        display:block;
+    }
+
+    #impresionParametros{
+        height: 250px;
+    }
+
+    #copiar{
+        margin: 5px 0 0 0;
+    }
+
+    footer{
+        position: unset;
+        margin: 1px 0 0 0;
+    }
 
 }
 
