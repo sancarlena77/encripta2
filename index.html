@@ -18,12 +18,12 @@
     <body class="fondo-general">
         <header> 
             <div>
-                <img src="assets/Logo.svg" class="logo" alt = "Logo"><h1>Encripta2</h1></img>
+                <img src="assets/Logo.svg" class="logo" alt = "Logo"><h1>Encripta2</h1>
             </div>
         </header>
         <main>
             <div class="contenedor-principal">
-                <div class="caja-formulario">
+                <section class="caja-formulario">
                     <form>                
                         <textarea cols="70" rows="10" id="textoIngresado" class="cajadetexto" required>Ingrese el texto aquí</textarea>
                         <div class="caja-alerta">
@@ -36,31 +36,31 @@
                             </ul>
                         </div>                        
                     </form>
-                </div>
-                <div class="caja-resultado">
-                    <div class="mensaje-resultado" id="mensaje-vacio">
+                </section>
+                <section class="caja-resultado">
+                    <section class="mensaje-resultado" id="mensaje-vacio">
                         <img src= "assets/personaje.svg" alt = "Joven masculino sentado con una lupa en su mano observando un diamante" class="personaje">
                         <h2>Ningún mensaje fue encontrado</h2>
                         <p>Ingresa el texto que desees encriptar o desencriptar.</p>    
-                    </div>
-                    <div class="mensaje-resultado" id="mensaje-procesado">
+                    </section>
+                    <section class="mensaje-resultado" id="mensaje-procesado">
                         <div id="impresionParametros">PRUEBA</div>
                         <input type="button" id="copiar" class="boton" value = "Copiar">
-                    </div>               
-                </div>  
+                    </section>               
+                </section>  
             </div>   
         </main>
 
         <footer> 
-            <div class="contenedor-piedepagina">
-                <div class="hechopor">
+            <section class="contenedor-piedepagina">
+                <section class="hechopor">
                     <img src= "assets/logo-heidy-livelongandprosper.png" class="logo" alt="Logo color blanco con una mezcla entre una H y la mano con el símbolo de live long and prosper">
                     <div>
                         <p class="copyright">Hecho por Heidy Murillo Quesada para Alura Latam</p>
                         <p class="copyright"> &copy Derechos reservados, 2023.</p> 
                     </div>
-                </div>
-                <div class="seguime">
+                </section>
+                <section class="seguime">
                     <p class="copyright"> Seguime en redes sociales </p>
                     <div class="botonesredes">
                         <ul>
@@ -69,8 +69,8 @@
                             <li><a title="Twitter" href="https://twitter.com/sancarlena77/"><img src="assets/iconmonstr-twitter-5.svg" class="redes-logo"></a></li>
                         </ul>
                     </div>
-                </div>
-            </div>
+                </section>
+            </section>
         </footer>
         
         <script src="scripts/encripta2.js"></script>
