@@ -200,6 +200,7 @@ footer p{
 
 .redes-logo{
     width: 80%;
+    transition: 0.5s;
 } 
 
 @media screen and (min-width: 821px) and (max-width: 1024px){ /*❚❚❚❚❚❚❚❚❚❚❚❚❚❚ HALF DESKTOP ❚❚❚❚❚❚❚❚❚❚❚❚❚❚*/
@@ -322,5 +323,108 @@ footer p{
 
 
 @media screen and (max-width: 412px) { /*❚❚❚❚❚❚❚❚❚❚❚❚❚❚ MOBILE ❚❚❚❚❚❚❚❚❚❚❚❚❚❚*/
+    
+    header{
+        padding-bottom: 0;
+    }
 
+    h1{
+        font-size: 25px;
+    }
+
+    .caja-formulario, .caja-resultado {
+        display: block;
+        width: 95%;
+        max-height: 350px;
+        margin: 0 auto;
+    }
+
+    .caja-resultado{
+        padding: 5px 0 0 0;
+        min-height: 0;
+    }
+
+    textarea, #impresionParametros {
+        height: 200px;
+        margin: 0;
+    }
+
+    textarea, input{
+        font-size: 15px;
+    }
+
+    .caja-alerta {
+        margin: 0;
+        padding: 7px;
+    }
+
+    .botonera{
+        margin: 0 auto 20px;
+    }
+
+    .boton{
+        min-width: 0;
+        text-align: center;
+        padding: 7px;
+    }
+
+    .personaje {
+        max-width: 200px;
+        margin: 1em 0 0 0;
+    }
+    
+    h2{
+        margin: 1em 0;
+        font-size: 20px;
+    }
+
+    .mensaje-resultado{
+        height: auto;
+    }
+
+    .mensaje-resultado p{
+        padding: 0 0 1em 0;
+    }
+
+    #copiar{
+        margin: 5px 0 10px 0;        width: 40%;
+    }
+
+    footer{
+        padding: 0;
+        margin: 0;
+        position: inherit;
+    }
+
+    .hechopor{
+        width: 50%;
+    }
+
+    .hechopor .logo{
+        transform: scale(0.7);
+    }
+    
+    .copyright {
+        font-size: 10px;
+    }
+
+    .copyright:hover {
+        transform: scale(1.2);
+    }
+
+    .hechopor div .copyright:first-child {
+        margin: 10px auto;
+    }
+
+    .seguime{
+        margin: 10px 0 0 0;
+    }
+    .botonesredes li{
+        margin: 1em 0 0 0;
+        min-width: 41px;
+    }
+
+    .redes-logo:hover{
+        transform: scale(1.2);
+    }
 }
