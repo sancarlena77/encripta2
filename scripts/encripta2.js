@@ -3,7 +3,11 @@
 //Variables de interacción con el index//
 
 const textoIngresado = document.getElementById("textoIngresado"); 
-var textoProcesado = textoIngresado.value; 
+    textoIngresado.addEventListener("focus", (event) => limpiarArea(event));
+    textoIngresado.addEventListener("keypress", (event) => validarFrontEnd(event));
+
+var textoProcesado; 
+
 
 const encriptar = document.getElementById("encriptar");
     encriptar.addEventListener("click", (event) => encriptarTexto(event)); 
@@ -24,7 +28,7 @@ var htmlParametros = ""; //Construcción de cadena para mostrar resultado//
 
 const caracteresPermitidos = /^[a-zñ\s]+$/; 
 const caracteresMinimos = /[a-zñ]/; 
-let continuarProcesamiento = true; 
+var continuaProceso = true; 
 
 //Variables operativas//
 
@@ -36,6 +40,12 @@ const llavesDeEncriptado = [
     ["u", "ufat"]
 ];
 
-
+function limpiarArea(){
+    if (textoIngresado.value == "Ingrese el texto aquí" ) {
+        if (textoIngresado.value != "") {
+            textoIngresado.value = "";
+    };
+    }
+}
 
 
