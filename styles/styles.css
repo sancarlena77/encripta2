@@ -51,10 +51,10 @@ textarea, input{
 
 textarea{
     border: none;
-    width: 96%;
+    width: 94%;
     resize: none;
     background: none;
-    padding: 2%;
+    padding: 3%;
     transition: 1s all;
     height: 350px;
     margin: 0 10% 0 0;
@@ -387,7 +387,8 @@ footer p{
     }
 
     #copiar{
-        margin: 5px 0 10px 0;        width: 40%;
+        margin: 5px 0 10px 0;        
+        width: 40%;
     }
 
     footer{
