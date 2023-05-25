@@ -69,3 +69,13 @@ function validarBackEnd(texto){
      }
 }
 
+function encriptarTexto (){
+    validarBackEnd(textoProcesado);
+    if(continuaProceso){
+        alert("tuanis");
+    }else{
+        textoIngresado.focus();
+    }
+
+}
+
