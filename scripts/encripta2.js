@@ -41,9 +41,11 @@ const llavesDeEncriptado = [
 ];
 
 function limpiarArea(){
-    if (textoIngresado.value != "") {
+    if (textoIngresado.value == "Ingrese el texto aquí") {
+        if (textoIngresado.value != "") {
             textoIngresado.value = "";
-    };
+        }
+    }
 }
 
 function validarFrontEnd(e) {
