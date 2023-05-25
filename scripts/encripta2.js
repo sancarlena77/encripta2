@@ -46,4 +46,26 @@ function limpiarArea(){
     };
 }
 
+function validarFrontEnd(e) {
+    if (e.key.match(caracteresPermitidos) === null) {
+        e.preventDefault();
+    } 
+}
+
+function validarBackEnd(texto){
+    textoProcesado = textoIngresado.value; 
+
+    if (textoProcesado == "Ingrese el texto aquí" || textoProcesado == "" ){
+        alert("No ha ingresado su texto, por favor inténtelo de nuevo");
+        continuaProceso = false;
+    }
+    if(!caracteresMinimos.test(texto)) {
+        alert ("Aquí no hay letras para encriptar");
+        continuaProceso = false;
+    }
+    if(caracteresPermitidos.test(texto)) {
+        alert ("Solamente se permiten letras minúsculas y espacios");
+        continuaProceso = false;
+     }
+}
 
