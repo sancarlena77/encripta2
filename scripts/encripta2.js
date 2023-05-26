@@ -9,6 +9,7 @@ const textoIngresado = document.getElementById("textoIngresado");
 var textoProcesado; 
 
 
+
 const encriptar = document.getElementById("encriptar");
     encriptar.addEventListener("click", (event) => encriptarTexto(event)); 
 
