@@ -67,28 +67,36 @@ function validarBackEnd(texto){
     if(!caracteresPermitidos.test(texto)&& continuaProceso) {
         alert ("Solamente se permiten letras minúsculas y espacios");
         continuaProceso = false;
-     }
+    }
 }
 
 function encriptarTexto (){
     textoProcesado = textoIngresado.value; 
     validarBackEnd(textoProcesado);
-    if(continuaProceso){
-        alert("tuanis");
+    if(continuaProceso){     
+        for(let i = 0; i < llavesDeEncriptado.length; i++){
+            if(textoProcesado.includes(llavesDeEncriptado[i][0])){
+                textoProcesado = textoProcesado.replaceAll(llavesDeEncriptado[i][0], llavesDeEncriptado[i][1])
+            }
+        }
+        alert (textoProcesado);
     }else{
         textoIngresado.focus();
     }
-
 }
 
 function desencriptarTexto (){
     textoProcesado = textoIngresado.value; 
     validarBackEnd(textoProcesado);
-    if(continuaProceso){
-        alert("Más tuanis");
+    if(continuaProceso){     
+        for(let i = 0; i < llavesDeEncriptado.length; i++){
+            if(textoProcesado.includes(llavesDeEncriptado[i][1])){
+                textoProcesado = textoProcesado.replaceAll(llavesDeEncriptado[i][1], llavesDeEncriptado[i][0])
+            }
+        }
+        alert (textoProcesado);
     }else{
         textoIngresado.focus();
     }
-
 }
 
