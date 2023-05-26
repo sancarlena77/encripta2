@@ -8,7 +8,6 @@ const textoIngresado = document.getElementById("textoIngresado");
 
 var textoProcesado; 
 
-
 const encriptar = document.getElementById("encriptar");
     encriptar.addEventListener("click", (event) => encriptarTexto(event)); 
 
@@ -41,9 +40,11 @@ const llavesDeEncriptado = [
 ];
 
 function limpiarArea(){
-    if (textoIngresado.value != "") {
+    if (textoIngresado.value == "Ingrese el texto aquí") {
+        if (textoIngresado.value != "") {
             textoIngresado.value = "";
-    };
+        }
+    }
 }
 
 function validarFrontEnd(e) {
@@ -53,23 +54,24 @@ function validarFrontEnd(e) {
 }
 
 function validarBackEnd(texto){
-    textoProcesado = textoIngresado.value; 
+    continuaProceso = true;
 
     if (textoProcesado == "Ingrese el texto aquí" || textoProcesado == "" ){
         alert("No ha ingresado su texto, por favor inténtelo de nuevo");
         continuaProceso = false;
-    }
-    if(!caracteresMinimos.test(texto)) {
+    }  
+    if(!caracteresMinimos.test(texto) && continuaProceso) {
         alert ("Aquí no hay letras para encriptar");
         continuaProceso = false;
     }
-    if(caracteresPermitidos.test(texto)) {
+    if(!caracteresPermitidos.test(texto)&& continuaProceso) {
         alert ("Solamente se permiten letras minúsculas y espacios");
         continuaProceso = false;
      }
 }
 
 function encriptarTexto (){
+    textoProcesado = textoIngresado.value; 
     validarBackEnd(textoProcesado);
     if(continuaProceso){
         alert("tuanis");
