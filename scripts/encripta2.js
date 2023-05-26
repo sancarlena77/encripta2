@@ -81,3 +81,14 @@ function encriptarTexto (){
 
 }
 
+function desencriptarTexto (){
+    textoProcesado = textoIngresado.value; 
+    validarBackEnd(textoProcesado);
+    if(continuaProceso){
+        alert("Más tuanis");
+    }else{
+        textoIngresado.focus();
+    }
+
+}
+
