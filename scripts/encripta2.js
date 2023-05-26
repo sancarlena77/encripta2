@@ -20,7 +20,7 @@ const copiar = document.getElementById("copiar");
 let mensajeVacio = document.getElementById("mensaje-vacio"); //Div que muestra personajes y mensaje de espera//
 let mensajeProcesado = document.getElementById("mensaje-procesado"); //Div que muestra elementos del resultado//
 
-var impresionParametros = document.getElementById("impresionParametros"); //Div donde se mostrará el resultado//
+var impresionResultado = document.getElementById("impresionResultado"); //Div donde se mostrará el resultado//
 var htmlParametros = ""; //Construcción de cadena para mostrar resultado//
 
 //Variables de validación//
@@ -99,4 +99,7 @@ function desencriptarTexto (){
         textoIngresado.focus();
     }
 }
+
+function imprimirResultado(texto){}
+
 
