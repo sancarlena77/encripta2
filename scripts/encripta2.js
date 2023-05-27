@@ -107,6 +107,7 @@ function imprimirResultado() {
     impresionResultado.innerHTML = textoProcesado;
     mensajeVacio.style.display = "none";
     mensajeProcesado.style.display = "block";
+    textoProcesado="";
 }
 
 
