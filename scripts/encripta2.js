@@ -107,13 +107,10 @@ function imprimirResultado() {
     impresionResultado.innerHTML = textoProcesado;
     mensajeVacio.style.display = "none";
     mensajeProcesado.style.display = "block";
-    textoProcesado="";
 }
 
 
 function copiarTexto() {
-    impresionResultado.innerHTML.select();
-    navigator.clipboard.writeText(impresionResultado.value)
-    impresionResultado.value = "";
+    navigator.clipboard.writeText(textoProcesado);
     alert("Texto Copiado")
 }
