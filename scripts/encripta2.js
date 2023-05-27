@@ -111,3 +111,9 @@ function imprimirResultado() {
 }
 
 
+function copiarTexto() {
+    impresionResultado.innerHTML.select();
+    navigator.clipboard.writeText(impresionResultado.value)
+    impresionResultado.value = "";
+    alert("Texto Copiado")
+}
