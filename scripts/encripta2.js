@@ -68,7 +68,7 @@ function validarBackEnd(texto){
     }  
     if(!caracteresMinimos.test(texto) && continuaProceso) {
         swal({
-            text : "Aquí no hay letras para encriptar",
+            text : "Aquí no hay letras para procesar",
             icon : "error",
             button : false
         });
