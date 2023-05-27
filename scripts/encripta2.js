@@ -20,8 +20,9 @@ const copiar = document.getElementById("copiar");
 let mensajeVacio = document.getElementById("mensaje-vacio"); //Div que muestra personajes y mensaje de espera//
 let mensajeProcesado = document.getElementById("mensaje-procesado"); //Div que muestra elementos del resultado//
 
-var impresionParametros = document.getElementById("impresionParametros"); //Div donde se mostrará el resultado//
-var htmlParametros = ""; //Construcción de cadena para mostrar resultado//
+var tipoDeResultado = document.getElementById("tipoDeResultado"); //Div donde se mostrará el tipo//
+var impresionResultado = document.getElementById("impresionResultado"); //Div donde se mostrará el resultado//
+
 
 //Variables de validación//
 
@@ -67,17 +68,45 @@ function validarBackEnd(texto){
     if(!caracteresPermitidos.test(texto)&& continuaProceso) {
         alert ("Solamente se permiten letras minúsculas y espacios");
         continuaProceso = false;
-     }
+    }
 }
 
 function encriptarTexto (){
     textoProcesado = textoIngresado.value; 
     validarBackEnd(textoProcesado);
-    if(continuaProceso){
-        alert("tuanis");
+    if(continuaProceso){     
+        for(let i = 0; i < llavesDeEncriptado.length; i++){
+            if(textoProcesado.includes(llavesDeEncriptado[i][0])){
+                textoProcesado = textoProcesado.replaceAll(llavesDeEncriptado[i][0], llavesDeEncriptado[i][1])
+            }
+        }
+        tipoDeResultado.innerHTML = "<h2>Su texto encriptado es:</h2>";
+        imprimirResultado()
     }else{
         textoIngresado.focus();
     }
-
 }
+
+function desencriptarTexto () {
+    textoProcesado = textoIngresado.value; 
+    validarBackEnd(textoProcesado);
+    if(continuaProceso) {     
+        for(let i = 0; i < llavesDeEncriptado.length; i++) {
+            if(textoProcesado.includes(llavesDeEncriptado[i][1])) {
+                textoProcesado = textoProcesado.replaceAll(llavesDeEncriptado[i][1], llavesDeEncriptado[i][0])
+            }
+        }
+        tipoDeResultado.innerHTML = "<h2>Su texto desencriptado es:</h2>";
+        imprimirResultado();
+        }else{
+        textoIngresado.focus();
+    }
+}
+
+function imprimirResultado() {
+    impresionResultado.innerHTML = textoProcesado;
+    mensajeVacio.style.display = "none";
+    mensajeProcesado.style.display = "block";
+}
+
 

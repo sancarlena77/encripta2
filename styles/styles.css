@@ -124,7 +124,7 @@ textarea:hover{
     height: 450px;
 }
 
-#mensaje-procesado{
+#mensaje-procesado {
     display: none;
 }
 
@@ -137,11 +137,15 @@ textarea:hover{
 h2{
     font-family: 'Baloo Paaji 2';
     font-size: 25px;
-    margin: 2em auto;
+    margin: 1em;
 }
 
-#impresionParametros {
-    height: 300px;
+#tipoDeResultado h2{
+    margin: 0 auto;
+}
+
+#impresionResultado {
+    height: 290px;
     resize: none;
     padding: 1em 0 0 0;
     overflow: auto;
@@ -253,18 +257,17 @@ footer p{
     }
     
     h2{
-        margin: 1em;
+        padding: 10px 0 0;
+        text-align: center;
     }
 
-    #mensaje-vacio{
-        display: none;
-    }
-    #mensaje-procesado{
-        display:block;
+    .mensaje-resultado {
+        height: 330px;
     }
 
-    #impresionParametros{
-        height: 250px;
+    #impresionResultado{
+        height: 210px;
+        padding: 10px 10px;
     }
 
     #copiar{
@@ -287,7 +290,7 @@ footer p{
         margin: 0 auto;
     }
 
-    textarea, #impresionParametros {
+    textarea, #impresionResultado {
         height: 280px;
         margin: 0;
     }
@@ -344,7 +347,7 @@ footer p{
         min-height: 0;
     }
 
-    textarea, #impresionParametros {
+    textarea, #impresionResultado {
         height: 200px;
         margin: 0;
     }
@@ -376,6 +379,8 @@ footer p{
     h2{
         margin: 1em 0;
         font-size: 20px;
+        padding: 10px 0 0;
+        text-align: center;
     }
 
     .mensaje-resultado{
