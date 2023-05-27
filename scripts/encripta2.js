@@ -58,15 +58,28 @@ function validarBackEnd(texto){
     continuaProceso = true;
 
     if (textoProcesado == "Ingrese el texto aquí" || textoProcesado == "" ){
-        alert("No ha ingresado su texto, por favor inténtelo de nuevo");
+        swal({
+            text : "No ha ingresado su texto, por favor inténtelo de nuevo",
+            icon : "error",
+            button : false
+        });
+    
         continuaProceso = false;
     }  
     if(!caracteresMinimos.test(texto) && continuaProceso) {
-        alert ("Aquí no hay letras para encriptar");
+        swal({
+            text : "Aquí no hay letras para encriptar",
+            icon : "error",
+            button : false
+        });
         continuaProceso = false;
     }
     if(!caracteresPermitidos.test(texto)&& continuaProceso) {
-        alert ("Solamente se permiten letras minúsculas y espacios");
+        swal({
+            text : "Solamente se permiten letras minúsculas y espacios",
+            icon : "error",
+            button : false
+        });
         continuaProceso = false;
     }
 }
@@ -112,5 +125,9 @@ function imprimirResultado() {
 
 function copiarTexto() {
     navigator.clipboard.writeText(textoProcesado);
-    alert("Texto Copiado")
+    swal({
+        text : "Copiado con éxito",
+        icon : "success",
+        button : false,
+    });
 }
