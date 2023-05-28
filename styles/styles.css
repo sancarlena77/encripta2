@@ -161,7 +161,6 @@ footer{
     background: #601143;
     padding: 1em;
     vertical-align: baseline;
-    position: absolute;
     margin: 2em 0 0 0;
     width: 100%;
     bottom: 0;
@@ -216,8 +215,11 @@ footer p{
 
     header div{
         text-align: left;
-        position: absolute;
-        margin: 1em 40px;
+        margin: 0 2em;
+    }
+    
+    header .logo{
+        width: 70px;
     }
 
     .contenedor-principal{
@@ -229,6 +231,7 @@ footer p{
     }    
 
     textarea{
+        margin: 10px 0;
         height: 240px;
     }
 
@@ -243,6 +246,7 @@ footer p{
 
     .boton{
         transform: scale(0.8);
+        font-size : 15px;
     } 
 
     .caja-resultado{
@@ -275,7 +279,6 @@ footer p{
     }
 
     footer{
-        position: unset;
         margin: 1px 0 0 0;
     }
 
@@ -369,6 +372,7 @@ footer p{
         min-width: 0;
         text-align: center;
         padding: 7px;
+        font-size : 13px;
     }
 
     .personaje {
@@ -399,7 +403,6 @@ footer p{
     footer{
         padding: 0;
         margin: 0;
-        position: inherit;
     }
 
     .hechopor{
