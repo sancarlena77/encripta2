@@ -159,7 +159,6 @@ h2{
 
 footer{
     background: #601143;
-    padding: 1em;
     vertical-align: baseline;
     margin: 2em 0 0 0;
     width: 100%;
@@ -319,10 +318,6 @@ footer p{
         margin:1em 0 0 0;
         width: 40%;
     }
-
-    footer{
-        padding: 0;
-    }
 }
 
 
@@ -401,7 +396,6 @@ footer p{
     }
 
     footer{
-        padding: 0;
         margin: 0;
     }
 
